@@ -1,6 +1,6 @@
 # .airules
 
-This project provides a curated collection of global rules for AI coding assistants like Claude and Gemini. The goal is to offer a centralized, community-driven set of instructions that can be easily imported into your global configuration files to improve an agent's behavior, safety, and efficiency across all your projects.
+This project provides a curated collection of global rules for AI coding assistants like Claude Code and Gemini CLI.
 
 ## Philosophy
 
@@ -33,7 +33,7 @@ The following rule sets are currently included:
 -   **[Branching Strategy](rules/branching-strategy.md):** Defines a strict `issue/<number>` convention for branch names.
 -   **[Commit Messages](rules/commit-messages.md):** Enforces the [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) specification.
 -   **[Git Interaction](rules/git.md):** Provides rules for the `git` CLI, including workflow, remote naming, and shortcuts.
--   **[GitHub Interaction](rules/github.md):** Defines a comprehensive, issue-driven workflow for interacting with GitHub.
+-   **[GitHub Interaction](rules/github.md):** Defines an issue-driven workflow for interacting with GitHub.
 -   **[Pull Requests](rules/pull-requests.md):** Outlines best practices for creating and reviewing pull requests.
 
 ## Installation
@@ -53,7 +53,7 @@ The script is safe to run multiple times. It will not create duplicate entries.
 
 ## Testing
 
-This project includes a robust test suite to ensure the `install.sh` script works as expected.
+This project includes a test suite to ensure the `install.sh` script works as expected.
 
 ### Running Tests Locally
 
