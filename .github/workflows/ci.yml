@@ -1,0 +1,29 @@
+# GitHub Actions workflow to run tests for the .airules project
+#
+# This workflow triggers on every pull request to ensure that the
+# install.sh script works as expected.
+#
+name: Test install.sh
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
+jobs:
+  test:
+    name: Run Installer Script Tests
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Make scripts executable
+        run: |
+          chmod +x install.sh
+          chmod +x tests/tests.sh
+
+      - name: Run test script
+        run: bash tests/tests.sh
